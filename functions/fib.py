@@ -2,15 +2,19 @@
 # -*- coding: utf-8 -*-
 
 def fib(n):  # Write Fibonacci series up to n
-    """Print a Fibonacci series up to n."""
+    """Return a list containing the Fibonacci series up to n."""
+    result = []
     a, b = 0, 1
     while a < n:
-        print(a, end=' ')
+        result.append(a)
         a, b = b, b+a
-    print()
+    return result
 
 if __name__ == "__main__":
-    fib(2000)
+    print("type(fib):", type(fib))
+    print("fib(2000) =", fib(2000))
     f = fib
-    f(100)
+    print("f(100) =", f(100))
+    f100 = fib(100)
+    print("f100 = ", f100)
 
