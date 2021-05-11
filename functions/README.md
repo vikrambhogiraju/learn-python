@@ -8,3 +8,6 @@
 * [parrot.py](parrot.py): demonstrate positional and keyword argument basics
 * [cheeseshop.py](cheeseshop.py): demonstrate variable positional and keyword arguments
 * [spl_params.py](spl_params.py): demonstrate special parameters to separate postional, standard and keyword arguments
+* [arbitrary_args.ipynb](arbitrary_args.ipynb): demonstrate passing variable number of args to a function
+* [unpacking_args.ipynb](unpacking_args.ipynb): demonstrate unpacking args to a function from a list or dict
+* [lambda.py](lambda.py): demonstrates lambda functions
