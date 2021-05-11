@@ -13,6 +13,12 @@ def kw_only_arg(*, arg):
 def combined_example(pos_only, /, standard, *, kw_only):
     print(pos_only, standard, kw_only)
 
+def collision_example1(name, **kwds):
+    return 'name' in kwds
+
+def collision_example2(name, /, **kwds):
+    return 'name' in kwds
+
 def test_std_arg():
     print("Testing std_arg()")
     std_arg(2) # prints 2
@@ -35,10 +41,18 @@ def test_combined_example():
     combined_example(1, standard=2, kw_only=3) # prints 1, 2, 3
     # combined_example(pos_only=1, standard=2, kw_only=3) # Fails with unexpected keyword argument pos_only
 
+def test_collision_examples():
+    # collision_example1(1, **{name: 2}) # Fails with too many arguments for name
+    a = collision_example2(1, **{'name': 2}) # Runs successfully and returns True
+    print('Collision Example2 returns', a)
+
+
+
 if __name__ == "__main__":
     test_pos_only_arg()
     test_std_arg()
     test_kw_only_arg()
     test_combined_example()
+    test_collision_examples()
 
 
