@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 def make_incrementor(n):
     return lambda x: x + n

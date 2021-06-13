@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 def cheeseshop(kind, *args, **kwargs):
     print("--Do you have any", kind, "?")

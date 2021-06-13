@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
     """

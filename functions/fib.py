@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 def fib(n):  # Write Fibonacci series up to n
     """Return a list containing the Fibonacci series up to n."""
